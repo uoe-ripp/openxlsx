@@ -120,10 +120,7 @@ read.xlsx.default <- function(
     sheetselected <- FALSE
   }
   
-  if (!grepl("\\.xlsx$", xlsxFile)) {
-    stop("openxlsx can only read .xlsx files", call. = FALSE)
-  }
-  
+   
   assert_true_false1(colNames)
   assert_true_false1(rowNames)
   assert_true_false1(detectDates)
